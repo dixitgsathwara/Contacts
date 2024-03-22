@@ -13,8 +13,7 @@ const contactSchema = ({
     type: Number,
     required: [true, "please add number"],
   },
+  date: { type: Date, default: Date.now }
 });
-//   {
-//     timestamps: true,
-//   }
+
 module.exports = mongoose.model("contact", contactSchema);
